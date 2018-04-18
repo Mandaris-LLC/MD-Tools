@@ -6,6 +6,7 @@
   "description": "Mandaris CLI",
   "main": "lib/index.js",
   "scripts": {
+    "preinstall": "tsc",
     "build": "tsc"
   },
   "repository": {
