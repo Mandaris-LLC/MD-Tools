@@ -1,0 +1,33 @@
+{
+  "name": "md-tools",
+  "preferGlobal": true,
+  "bin": "lib/index.js",
+  "version": "1.0.0",
+  "description": "Mandaris CLI",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandaris-LLC/MD-Tools.git"
+  },
+  "author": "Mandaris LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mandaris-LLC/MD-Tools/issues"
+  },
+  "homepage": "https://github.com/Mandaris-LLC/MD-Tools#readme",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "request": "^2.85.0",
+    "tmp": "0.0.33",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/request": "^2.47.0",
+    "@types/tmp": "0.0.33",
+    "@types/unzip": "^0.1.0"
+  }
+}

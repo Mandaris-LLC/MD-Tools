@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "lib": false,
+        "**/.gitmodules": true,
+        "out.zip": true,
+        "**/node_modules": true
+    }
+}
