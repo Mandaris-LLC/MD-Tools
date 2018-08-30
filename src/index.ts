@@ -16,4 +16,17 @@ commander
         })
     })
 
+
+commander
+    .command('client-api-init <name> <git-url> <api-url>')
+    .alias('cai')
+    .description('Initializes a new Typescript Client API')
+    .action((name, gitUrl, apiURl) => {
+        initApi(name, gitUrl, apiURl).then(() => {
+            console.log("Done")
+        }).catch((err) => {
+            console.error(err)
+        })
+    })
+
 commander.parse(process.argv)
