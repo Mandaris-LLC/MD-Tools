@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import * as commander from 'commander'
 import initApi from './api-init';
+import initClientApi from './client-api-init';
 
 commander.version('1.0.0').description('Mandaris CLI Tools')
 
@@ -22,7 +23,7 @@ commander
     .alias('cai')
     .description('Initializes a new Typescript Client API')
     .action((name, gitUrl, apiURl) => {
-        initApi(name, gitUrl, apiURl).then(() => {
+        initClientApi(name, gitUrl, apiURl).then(() => {
             console.log("Done")
         }).catch((err) => {
             console.error(err)
